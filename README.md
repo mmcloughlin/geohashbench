@@ -14,9 +14,9 @@ Benchmarks to compare golang geohash implementations.
 * [Codefor/geohash](https://github.com/Codefor/geohash)
 * [fanixk/geohash](https://github.com/fanixk/geohash)
 
-# Results
+## Results
 
-## String Encoding
+### String Encoding
 
 ```
 BenchmarkMmcloughlinEncodeString-4    	20000000	        80.6 ns/op
@@ -28,7 +28,7 @@ BenchmarkGansiduiEncodeString-4       	 2000000	       815 ns/op
 BenchmarkBroadyEncodeString-4         	 1000000	      1376 ns/op
 ```
 
-## Integer Encoding
+### Integer Encoding
 
 ```
 BenchmarkMmcloughlinEncodeInt-4   	100000000	        12.6 ns/op
