@@ -18,13 +18,24 @@ def enrich_package(pkg):
 
 benchmark_template = '''
 func Benchmark{label}{name}(b *testing.B) {{
-    points := RandomPoints(b.N)
+    {vectors} := {generator}(b.N)
     b.ResetTimer()
     for i := 0; i < b.N; i++ {{
         {alias}.{func}
     }}
 }}
 '''
+
+
+INPUT_TYPES = {
+        'Encode': {
+            'generator': 'RandomPoints',
+            'vectors': 'points',
+            'lat': 'points[i][0]',
+            'lng': 'points[i][1]',
+            },
+        }
+
 
 def output_benchmarks(pkgs):
     print 'package geohashbench'
@@ -38,12 +49,14 @@ def output_benchmarks(pkgs):
 
     for pkg in pkgs:
         for name, tmpl in pkg.get('benchmarks', {}).items():
-            func = tmpl.format(lat='points[i][0]', lng='points[i][1]')
-            print benchmark_template.format(
-                    func=func,
-                    name=name,
-                    **pkg
-                    )
+            for pattern, input_type in INPUT_TYPES.items():
+                if name.startswith(pattern):
+                    break
+            params = dict(pkg)
+            params.update(input_type)
+            params['name'] = name
+            params['func'] = tmpl.format(**params)
+            print benchmark_template.format(**params)
 
 
 def main(args):
