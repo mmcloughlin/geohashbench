@@ -1,7 +1,7 @@
 name                        time/op
-MmcloughlinDecodeString-4   186ns ± 0%
-PierrreDecodeString-4       354ns ± 0%
-CodeforDecodeString-4       452ns ± 0%
-BroadyDecodeString-4        526ns ± 0%
-TomihiltunenDecodeString-4  602ns ± 0%
-FanixkDecodeString-4        736ns ± 0%
+MmcloughlinDecodeString-4   195ns ± 0%
+PierrreDecodeString-4       352ns ± 0%
+CodeforDecodeString-4       444ns ± 0%
+BroadyDecodeString-4        529ns ± 0%
+TomihiltunenDecodeString-4  608ns ± 0%
+FanixkDecodeString-4        757ns ± 0%
