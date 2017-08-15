@@ -35,6 +35,17 @@ BenchmarkTomihiltunenDecodeString-4   	 3000000	       602 ns/op
 BenchmarkFanixkDecodeString-4         	 2000000	       736 ns/op
 ```
 
+### Meta
+
+```
+$ date
+Mon Aug 14 23:44:33 PDT 2017
+$ go version
+go version go1.8.1 darwin/amd64
+$ sysctl -n machdep.cpu.brand_string
+Intel(R) Core(TM) i7-6660U CPU @ 2.40GHz
+```
+
 ## Packages Tested
 
 * [mmcloughlin/geohash](https://github.com/mmcloughlin/geohash) ([godoc](https://godoc.org/github.com/mmcloughlin/geohash))

@@ -7,5 +7,6 @@ benchmarks_test.go: make_benchmarks.py packages.yaml
 results/%.out: benchmarks_test.go
 	go test -bench $* | grep Benchmark | tee | sort -k3,3n > $@
 
-README.md: README.md.j2 packages.yaml results/EncodeString.out results/EncodeInt.out results/DecodeString.out
+README.md: README.md.j2 packages.yaml meta.py results/EncodeString.out results/EncodeInt.out results/DecodeString.out
+	python meta.py > results/meta.out
 	j2 --format=yaml $< packages.yaml > $@

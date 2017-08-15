@@ -21,6 +21,12 @@ Benchmarks to compare golang geohash implementations.
 {% include 'results/DecodeString.out' %}
 ```
 
+### Meta
+
+```
+{% include 'results/meta.out' %}
+```
+
 ## Packages Tested
 {% for package in packages -%}
 {% set name = '/'.join(package['import'].split('/')[1:]) %}
