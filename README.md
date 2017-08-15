@@ -6,40 +6,43 @@ Benchmarks to compare golang geohash implementations.
 ### String Encoding
 
 ```
-BenchmarkMmcloughlinEncodeString-4    	20000000	        78.8 ns/op
-BenchmarkPierrreEncodeString-4        	 2000000	       626 ns/op
-BenchmarkTomihiltunenEncodeString-4   	 2000000	       782 ns/op
-BenchmarkCodeforEncodeString-4        	 2000000	       786 ns/op
-BenchmarkGansiduiEncodeString-4       	 2000000	       800 ns/op
-BenchmarkFanixkEncodeString-4         	 2000000	       887 ns/op
-BenchmarkBroadyEncodeString-4         	 1000000	      1366 ns/op
+name                        time/op
+MmcloughlinEncodeString-4   78.8ns ± 0%
+PierrreEncodeString-4        626ns ± 0%
+TomihiltunenEncodeString-4   782ns ± 0%
+CodeforEncodeString-4        786ns ± 0%
+GansiduiEncodeString-4       800ns ± 0%
+FanixkEncodeString-4         887ns ± 0%
+BroadyEncodeString-4        1.37µs ± 0%
 ```
 
 ### Integer Encoding
 
 ```
-BenchmarkMmcloughlinEncodeInt-4   	100000000	        13.0 ns/op
-BenchmarkBsmEncodeInt-4           	100000000	        15.7 ns/op
-BenchmarkEzzkoramEncodeInt-4      	30000000	        43.4 ns/op
-BenchmarkCorscEncodeInt52-4       	 3000000	       496 ns/op
+name                    time/op
+MmcloughlinEncodeInt-4  13.0ns ± 0%
+BsmEncodeInt-4          15.7ns ± 0%
+EzzkoramEncodeInt-4     43.4ns ± 0%
+CorscEncodeInt52-4       496ns ± 0%
 ```
 
 ### String Decoding
 
 ```
-BenchmarkMmcloughlinDecodeString-4    	10000000	       186 ns/op
-BenchmarkPierrreDecodeString-4        	 5000000	       354 ns/op
-BenchmarkCodeforDecodeString-4        	 3000000	       452 ns/op
-BenchmarkBroadyDecodeString-4         	 3000000	       526 ns/op
-BenchmarkTomihiltunenDecodeString-4   	 3000000	       602 ns/op
-BenchmarkFanixkDecodeString-4         	 2000000	       736 ns/op
+name                        time/op
+MmcloughlinDecodeString-4   186ns ± 0%
+PierrreDecodeString-4       354ns ± 0%
+CodeforDecodeString-4       452ns ± 0%
+BroadyDecodeString-4        526ns ± 0%
+TomihiltunenDecodeString-4  602ns ± 0%
+FanixkDecodeString-4        736ns ± 0%
 ```
 
 ### Meta
 
 ```
 $ date
-Mon Aug 14 23:44:33 PDT 2017
+Tue Aug 15 10:46:21 PDT 2017
 $ go version
 go version go1.8.1 darwin/amd64
 $ sysctl -n machdep.cpu.brand_string
