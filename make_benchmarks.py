@@ -3,7 +3,7 @@ import yaml
 
 
 def read_packages(f):
-    pkgs = yaml.load(f)
+    pkgs = yaml.load(f)['packages']
     for pkg in pkgs:
         enrich_package(pkg)
     return pkgs

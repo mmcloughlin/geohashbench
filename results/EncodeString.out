@@ -1,0 +1,7 @@
+BenchmarkMmcloughlinEncodeString-4    	20000000	        80.6 ns/op
+BenchmarkPierrreEncodeString-4        	 2000000	       642 ns/op
+BenchmarkCodeforEncodeString-4        	 2000000	       706 ns/op
+BenchmarkFanixkEncodeString-4         	 2000000	       772 ns/op
+BenchmarkTomihiltunenEncodeString-4   	 2000000	       787 ns/op
+BenchmarkGansiduiEncodeString-4       	 2000000	       815 ns/op
+BenchmarkBroadyEncodeString-4         	 1000000	      1376 ns/op

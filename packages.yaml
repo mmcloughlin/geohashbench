@@ -1,31 +1,32 @@
-- import: github.com/mmcloughlin/geohash
-  benchmarks:
-    EncodeString: Encode({lat}, {lng})
-    EncodeInt: EncodeInt({lat}, {lng})
-- import: github.com/TomiHiltunen/geohash-golang
-  benchmarks:
-    EncodeString: Encode({lat}, {lng})
-- import: github.com/gansidui/geohash
-  benchmarks:
-    EncodeString: Encode({lat}, {lng}, 12)
-- import: github.com/pierrre/geohash
-  benchmarks:
-    EncodeString: Encode({lat}, {lng}, 12)
-- import: github.com/broady/gogeohash
-  benchmarks:
-    EncodeString: Encode({lat}, {lng})
-- import: github.com/bsm/geohashi
-  benchmarks:
-    EncodeInt: Encode({lat}, {lng})
-- import: github.com/corsc/go-geohash
-  benchmarks:
-    EncodeInt52: EncodeInt({lat}, {lng}, 52)
-- import: github.com/ezzkoram/geohash
-  benchmarks:
-    EncodeInt: FromCoordinates({lat}, {lng}).Hash()
-- import: github.com/Codefor/geohash
-  benchmarks:
-    EncodeString: Encode({lat}, {lng})
-- import: github.com/fanixk/geohash
-  benchmarks:
-    EncodeString: Encode({lat}, {lng})
+packages:
+  - import: github.com/mmcloughlin/geohash
+    benchmarks:
+      EncodeString: Encode({lat}, {lng})
+      EncodeInt: EncodeInt({lat}, {lng})
+  - import: github.com/TomiHiltunen/geohash-golang
+    benchmarks:
+      EncodeString: Encode({lat}, {lng})
+  - import: github.com/gansidui/geohash
+    benchmarks:
+      EncodeString: Encode({lat}, {lng}, 12)
+  - import: github.com/pierrre/geohash
+    benchmarks:
+      EncodeString: Encode({lat}, {lng}, 12)
+  - import: github.com/broady/gogeohash
+    benchmarks:
+      EncodeString: Encode({lat}, {lng})
+  - import: github.com/bsm/geohashi
+    benchmarks:
+      EncodeInt: Encode({lat}, {lng})
+  - import: github.com/corsc/go-geohash
+    benchmarks:
+      EncodeInt52: EncodeInt({lat}, {lng}, 52)
+  - import: github.com/ezzkoram/geohash
+    benchmarks:
+      EncodeInt: FromCoordinates({lat}, {lng}).Hash()
+  - import: github.com/Codefor/geohash
+    benchmarks:
+      EncodeString: Encode({lat}, {lng})
+  - import: github.com/fanixk/geohash
+    benchmarks:
+      EncodeString: Encode({lat}, {lng})

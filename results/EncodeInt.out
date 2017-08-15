@@ -1,0 +1,4 @@
+BenchmarkMmcloughlinEncodeInt-4   	100000000	        12.6 ns/op
+BenchmarkBsmEncodeInt-4           	100000000	        16.5 ns/op
+BenchmarkEzzkoramEncodeInt-4      	30000000	        45.0 ns/op
+BenchmarkCorscEncodeInt52-4       	 3000000	       499 ns/op
