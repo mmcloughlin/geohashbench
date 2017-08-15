@@ -1,0 +1,4 @@
+- import: github.com/mmcloughlin/geohash
+  benchmarks:
+    Encode: Encode({lat}, {lng})
+    EncodeInt: EncodeInt({lat}, {lng})
