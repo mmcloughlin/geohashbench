@@ -3,18 +3,22 @@ packages:
     benchmarks:
       EncodeString: Encode({lat}, {lng})
       EncodeInt: EncodeInt({lat}, {lng})
+      DecodeString: Decode({geohash})
   - import: github.com/TomiHiltunen/geohash-golang
     benchmarks:
       EncodeString: Encode({lat}, {lng})
+      DecodeString: Decode({geohash})
   - import: github.com/gansidui/geohash
     benchmarks:
       EncodeString: Encode({lat}, {lng}, 12)
   - import: github.com/pierrre/geohash
     benchmarks:
       EncodeString: Encode({lat}, {lng}, 12)
+      DecodeString: Decode({geohash})
   - import: github.com/broady/gogeohash
     benchmarks:
       EncodeString: Encode({lat}, {lng})
+      DecodeString: Decode({geohash})
   - import: github.com/bsm/geohashi
     benchmarks:
       EncodeInt: Encode({lat}, {lng})
@@ -27,6 +31,8 @@ packages:
   - import: github.com/Codefor/geohash
     benchmarks:
       EncodeString: Encode({lat}, {lng})
+      DecodeString: Decode({geohash})
   - import: github.com/fanixk/geohash
     benchmarks:
       EncodeString: Encode({lat}, {lng})
+      DecodeString: Decode({geohash})

@@ -31,11 +31,27 @@ func BenchmarkMmcloughlinEncodeString(b *testing.B) {
 	}
 }
 
+func BenchmarkMmcloughlinDecodeString(b *testing.B) {
+	geohashes := RandomStringGeohashes(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		mmcloughlin.Decode(geohashes[i])
+	}
+}
+
 func BenchmarkTomihiltunenEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		tomihiltunen.Encode(points[i][0], points[i][1])
+	}
+}
+
+func BenchmarkTomihiltunenDecodeString(b *testing.B) {
+	geohashes := RandomStringGeohashes(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		tomihiltunen.Decode(geohashes[i])
 	}
 }
 
@@ -55,11 +71,27 @@ func BenchmarkPierrreEncodeString(b *testing.B) {
 	}
 }
 
+func BenchmarkPierrreDecodeString(b *testing.B) {
+	geohashes := RandomStringGeohashes(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		pierrre.Decode(geohashes[i])
+	}
+}
+
 func BenchmarkBroadyEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		broady.Encode(points[i][0], points[i][1])
+	}
+}
+
+func BenchmarkBroadyDecodeString(b *testing.B) {
+	geohashes := RandomStringGeohashes(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		broady.Decode(geohashes[i])
 	}
 }
 
@@ -95,10 +127,26 @@ func BenchmarkCodeforEncodeString(b *testing.B) {
 	}
 }
 
+func BenchmarkCodeforDecodeString(b *testing.B) {
+	geohashes := RandomStringGeohashes(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		codefor.Decode(geohashes[i])
+	}
+}
+
 func BenchmarkFanixkEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		fanixk.Encode(points[i][0], points[i][1])
+	}
+}
+
+func BenchmarkFanixkDecodeString(b *testing.B) {
+	geohashes := RandomStringGeohashes(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		fanixk.Decode(geohashes[i])
 	}
 }

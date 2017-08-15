@@ -1,0 +1,6 @@
+BenchmarkMmcloughlinDecodeString-4    	10000000	       186 ns/op
+BenchmarkPierrreDecodeString-4        	 5000000	       354 ns/op
+BenchmarkCodeforDecodeString-4        	 3000000	       452 ns/op
+BenchmarkBroadyDecodeString-4         	 3000000	       526 ns/op
+BenchmarkTomihiltunenDecodeString-4   	 3000000	       602 ns/op
+BenchmarkFanixkDecodeString-4         	 2000000	       736 ns/op

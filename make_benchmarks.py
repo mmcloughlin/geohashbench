@@ -34,6 +34,11 @@ INPUT_TYPES = {
             'lat': 'points[i][0]',
             'lng': 'points[i][1]',
             },
+        'DecodeString': {
+            'generator': 'RandomStringGeohashes',
+            'vectors': 'geohashes',
+            'geohash': 'geohashes[i]',
+            },
         }
 
 
