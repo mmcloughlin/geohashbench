@@ -1,12 +1,6 @@
 # geohashbench
 Benchmarks to compare golang geohash implementations.
 
-## Packages Tested
-{% for package in packages -%}
-{% set name = '/'.join(package['import'].split('/')[1:]) %}
-* [{{ name }}](https://{{ package['import'] }})
-{%- endfor %}
-
 ## Results
 
 ### String Encoding
@@ -20,3 +14,9 @@ Benchmarks to compare golang geohash implementations.
 ```
 {% include 'results/EncodeInt.out' %}
 ```
+
+## Packages Tested
+{% for package in packages -%}
+{% set name = '/'.join(package['import'].split('/')[1:]) %}
+* [{{ name }}](https://{{ package['import'] }})
+{%- endfor %}

@@ -1,19 +1,6 @@
 # geohashbench
 Benchmarks to compare golang geohash implementations.
 
-## Packages Tested
-
-* [mmcloughlin/geohash](https://github.com/mmcloughlin/geohash)
-* [TomiHiltunen/geohash-golang](https://github.com/TomiHiltunen/geohash-golang)
-* [gansidui/geohash](https://github.com/gansidui/geohash)
-* [pierrre/geohash](https://github.com/pierrre/geohash)
-* [broady/gogeohash](https://github.com/broady/gogeohash)
-* [bsm/geohashi](https://github.com/bsm/geohashi)
-* [corsc/go-geohash](https://github.com/corsc/go-geohash)
-* [ezzkoram/geohash](https://github.com/ezzkoram/geohash)
-* [Codefor/geohash](https://github.com/Codefor/geohash)
-* [fanixk/geohash](https://github.com/fanixk/geohash)
-
 ## Results
 
 ### String Encoding
@@ -36,3 +23,16 @@ BenchmarkBsmEncodeInt-4           	100000000	        16.5 ns/op
 BenchmarkEzzkoramEncodeInt-4      	30000000	        45.0 ns/op
 BenchmarkCorscEncodeInt52-4       	 3000000	       499 ns/op
 ```
+
+## Packages Tested
+
+* [mmcloughlin/geohash](https://github.com/mmcloughlin/geohash)
+* [TomiHiltunen/geohash-golang](https://github.com/TomiHiltunen/geohash-golang)
+* [gansidui/geohash](https://github.com/gansidui/geohash)
+* [pierrre/geohash](https://github.com/pierrre/geohash)
+* [broady/gogeohash](https://github.com/broady/gogeohash)
+* [bsm/geohashi](https://github.com/bsm/geohashi)
+* [corsc/go-geohash](https://github.com/corsc/go-geohash)
+* [ezzkoram/geohash](https://github.com/ezzkoram/geohash)
+* [Codefor/geohash](https://github.com/Codefor/geohash)
+* [fanixk/geohash](https://github.com/fanixk/geohash)
