@@ -18,5 +18,5 @@ Benchmarks to compare golang geohash implementations.
 ## Packages Tested
 {% for package in packages -%}
 {% set name = '/'.join(package['import'].split('/')[1:]) %}
-* [{{ name }}](https://{{ package['import'] }})
+* [{{ name }}](https://{{ package['import'] }}) ([godoc](https://godoc.org/{{ package['import'] }}))
 {%- endfor %}

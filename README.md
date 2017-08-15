@@ -26,13 +26,13 @@ BenchmarkCorscEncodeInt52-4       	 3000000	       499 ns/op
 
 ## Packages Tested
 
-* [mmcloughlin/geohash](https://github.com/mmcloughlin/geohash)
-* [TomiHiltunen/geohash-golang](https://github.com/TomiHiltunen/geohash-golang)
-* [gansidui/geohash](https://github.com/gansidui/geohash)
-* [pierrre/geohash](https://github.com/pierrre/geohash)
-* [broady/gogeohash](https://github.com/broady/gogeohash)
-* [bsm/geohashi](https://github.com/bsm/geohashi)
-* [corsc/go-geohash](https://github.com/corsc/go-geohash)
-* [ezzkoram/geohash](https://github.com/ezzkoram/geohash)
-* [Codefor/geohash](https://github.com/Codefor/geohash)
-* [fanixk/geohash](https://github.com/fanixk/geohash)
+* [mmcloughlin/geohash](https://github.com/mmcloughlin/geohash) ([godoc](https://godoc.org/github.com/mmcloughlin/geohash))
+* [TomiHiltunen/geohash-golang](https://github.com/TomiHiltunen/geohash-golang) ([godoc](https://godoc.org/github.com/TomiHiltunen/geohash-golang))
+* [gansidui/geohash](https://github.com/gansidui/geohash) ([godoc](https://godoc.org/github.com/gansidui/geohash))
+* [pierrre/geohash](https://github.com/pierrre/geohash) ([godoc](https://godoc.org/github.com/pierrre/geohash))
+* [broady/gogeohash](https://github.com/broady/gogeohash) ([godoc](https://godoc.org/github.com/broady/gogeohash))
+* [bsm/geohashi](https://github.com/bsm/geohashi) ([godoc](https://godoc.org/github.com/bsm/geohashi))
+* [corsc/go-geohash](https://github.com/corsc/go-geohash) ([godoc](https://godoc.org/github.com/corsc/go-geohash))
+* [ezzkoram/geohash](https://github.com/ezzkoram/geohash) ([godoc](https://godoc.org/github.com/ezzkoram/geohash))
+* [Codefor/geohash](https://github.com/Codefor/geohash) ([godoc](https://godoc.org/github.com/Codefor/geohash))
+* [fanixk/geohash](https://github.com/fanixk/geohash) ([godoc](https://godoc.org/github.com/fanixk/geohash))
