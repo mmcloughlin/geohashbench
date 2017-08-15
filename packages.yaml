@@ -2,3 +2,6 @@
   benchmarks:
     Encode: Encode({lat}, {lng})
     EncodeInt: EncodeInt({lat}, {lng})
+- import: github.com/TomiHiltunen/geohash-golang
+  benchmarks:
+    Encode: Encode({lat}, {lng})
