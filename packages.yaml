@@ -1,19 +1,19 @@
 - import: github.com/mmcloughlin/geohash
   benchmarks:
-    Encode: Encode({lat}, {lng})
+    EncodeString: Encode({lat}, {lng})
     EncodeInt: EncodeInt({lat}, {lng})
 - import: github.com/TomiHiltunen/geohash-golang
   benchmarks:
-    Encode: Encode({lat}, {lng})
+    EncodeString: Encode({lat}, {lng})
 - import: github.com/gansidui/geohash
   benchmarks:
-    Encode: Encode({lat}, {lng}, 12)
+    EncodeString: Encode({lat}, {lng}, 12)
 - import: github.com/pierrre/geohash
   benchmarks:
-    Encode: Encode({lat}, {lng}, 12)
+    EncodeString: Encode({lat}, {lng}, 12)
 - import: github.com/broady/gogeohash
   benchmarks:
-    Encode: Encode({lat}, {lng})
+    EncodeString: Encode({lat}, {lng})
 - import: github.com/bsm/geohashi
   benchmarks:
     EncodeInt: Encode({lat}, {lng})
@@ -25,7 +25,7 @@
     EncodeInt: FromCoordinates({lat}, {lng}).Hash()
 - import: github.com/Codefor/geohash
   benchmarks:
-    Encode: Encode({lat}, {lng})
+    EncodeString: Encode({lat}, {lng})
 - import: github.com/fanixk/geohash
   benchmarks:
-    Encode: Encode({lat}, {lng})
+    EncodeString: Encode({lat}, {lng})
