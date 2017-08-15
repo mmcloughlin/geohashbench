@@ -15,14 +15,6 @@ import (
 	pierrre "github.com/pierrre/geohash"
 )
 
-func BenchmarkMmcloughlinEncode(b *testing.B) {
-	points := RandomPoints(b.N)
-	b.ResetTimer()
-	for i := 0; i < b.N; i++ {
-		mmcloughlin.Encode(points[i][0], points[i][1])
-	}
-}
-
 func BenchmarkMmcloughlinEncodeInt(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
@@ -31,7 +23,15 @@ func BenchmarkMmcloughlinEncodeInt(b *testing.B) {
 	}
 }
 
-func BenchmarkTomihiltunenEncode(b *testing.B) {
+func BenchmarkMmcloughlinEncodeString(b *testing.B) {
+	points := RandomPoints(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		mmcloughlin.Encode(points[i][0], points[i][1])
+	}
+}
+
+func BenchmarkTomihiltunenEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -39,7 +39,7 @@ func BenchmarkTomihiltunenEncode(b *testing.B) {
 	}
 }
 
-func BenchmarkGansiduiEncode(b *testing.B) {
+func BenchmarkGansiduiEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -47,7 +47,7 @@ func BenchmarkGansiduiEncode(b *testing.B) {
 	}
 }
 
-func BenchmarkPierrreEncode(b *testing.B) {
+func BenchmarkPierrreEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -55,7 +55,7 @@ func BenchmarkPierrreEncode(b *testing.B) {
 	}
 }
 
-func BenchmarkBroadyEncode(b *testing.B) {
+func BenchmarkBroadyEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -87,7 +87,7 @@ func BenchmarkEzzkoramEncodeInt(b *testing.B) {
 	}
 }
 
-func BenchmarkCodeforEncode(b *testing.B) {
+func BenchmarkCodeforEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -95,7 +95,7 @@ func BenchmarkCodeforEncode(b *testing.B) {
 	}
 }
 
-func BenchmarkFanixkEncode(b *testing.B) {
+func BenchmarkFanixkEncodeString(b *testing.B) {
 	points := RandomPoints(b.N)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
