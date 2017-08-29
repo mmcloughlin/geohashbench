@@ -13,6 +13,7 @@ import (
 	gansidui "github.com/gansidui/geohash"
 	mmcloughlin "github.com/mmcloughlin/geohash"
 	pierrre "github.com/pierrre/geohash"
+	tidwall "github.com/tidwall/tile38/geojson/geohash"
 )
 
 func BenchmarkMmcloughlinEncodeInt(b *testing.B) {
@@ -148,5 +149,21 @@ func BenchmarkFanixkDecodeString(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		fanixk.Decode(geohashes[i])
+	}
+}
+
+func BenchmarkTidwallEncodeString(b *testing.B) {
+	points := RandomPoints(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		tidwall.Encode(points[i][0], points[i][1], 12)
+	}
+}
+
+func BenchmarkTidwallDecodeString(b *testing.B) {
+	geohashes := RandomStringGeohashes(b.N)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		tidwall.Decode(geohashes[i])
 	}
 }

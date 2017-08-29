@@ -1,8 +1,9 @@
 name                        time/op
-MmcloughlinEncodeString-4   76.8ns ± 0%
-PierrreEncodeString-4        659ns ± 0%
-CodeforEncodeString-4        696ns ± 0%
-FanixkEncodeString-4         764ns ± 0%
-TomihiltunenEncodeString-4   786ns ± 0%
-GansiduiEncodeString-4       817ns ± 0%
-BroadyEncodeString-4        1.36µs ± 0%
+MmcloughlinEncodeString-4   76.2ns ± 0%
+PierrreEncodeString-4        649ns ± 0%
+CodeforEncodeString-4        714ns ± 0%
+FanixkEncodeString-4         775ns ± 0%
+TomihiltunenEncodeString-4   811ns ± 0%
+GansiduiEncodeString-4       832ns ± 0%
+TidwallEncodeString-4        905ns ± 0%
+BroadyEncodeString-4        1.40µs ± 0%

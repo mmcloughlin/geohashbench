@@ -1,5 +1,5 @@
 $ date
-Tue Aug 15 10:50:04 PDT 2017
+Mon Aug 28 21:53:30 PDT 2017
 $ go version
 go version go1.8.1 darwin/amd64
 $ sysctl -n machdep.cpu.brand_string

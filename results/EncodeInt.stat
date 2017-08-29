@@ -1,5 +1,5 @@
 name                    time/op
-MmcloughlinEncodeInt-4  13.4ns ± 0%
-BsmEncodeInt-4          17.3ns ± 0%
-EzzkoramEncodeInt-4     43.5ns ± 0%
-CorscEncodeInt52-4       520ns ± 0%
+MmcloughlinEncodeInt-4  12.9ns ± 0%
+BsmEncodeInt-4          16.3ns ± 0%
+EzzkoramEncodeInt-4     43.4ns ± 0%
+CorscEncodeInt52-4       511ns ± 0%
