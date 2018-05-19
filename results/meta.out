@@ -1,6 +1,6 @@
 $ date
-Mon Aug 28 21:53:30 PDT 2017
+Sat May 19 16:24:38 PDT 2018
 $ go version
-go version go1.8.1 darwin/amd64
+go version go1.9.2 darwin/amd64
 $ sysctl -n machdep.cpu.brand_string
-Intel(R) Core(TM) i7-6660U CPU @ 2.40GHz
+Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz

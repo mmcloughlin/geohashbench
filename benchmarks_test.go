@@ -13,7 +13,7 @@ import (
 	gansidui "github.com/gansidui/geohash"
 	mmcloughlin "github.com/mmcloughlin/geohash"
 	pierrre "github.com/pierrre/geohash"
-	tidwall "github.com/tidwall/tile38/geojson/geohash"
+	tidwall "github.com/tidwall/tile38/pkg/geojson/geohash"
 )
 
 func BenchmarkMmcloughlinEncodeInt(b *testing.B) {

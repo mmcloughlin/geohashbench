@@ -36,7 +36,7 @@ packages:
     benchmarks:
       EncodeString: Encode({lat}, {lng})
       DecodeString: Decode({geohash})
-  - import: github.com/tidwall/tile38/geojson/geohash
+  - import: github.com/tidwall/tile38/pkg/geojson/geohash
     benchmarks:
       EncodeString: Encode({lat}, {lng}, 12)
       DecodeString: Decode({geohash})
