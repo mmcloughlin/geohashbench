@@ -7,7 +7,7 @@ benchmarks_test.go: make_benchmarks.py packages.yaml
 
 results/%.out: benchmarks_test.go
 	mkdir -p results
-	go test -bench $* | grep Benchmark | tee | sort -k3,3n > $@
+	go test -bench $* | grep Benchmark | sort -k3,3n > $@
 
 %.stat: %.out
 	benchstat $< > $@

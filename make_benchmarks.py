@@ -18,7 +18,7 @@ def enrich_package(pkg):
 
 benchmark_template = '''
 func Benchmark{label}{name}(b *testing.B) {{
-    {vectors} := {generator}(b.N)
+    {vectors} := {generator}({num})
     b.ResetTimer()
     for i := 0; i < b.N; i++ {{
         {alias}.{func}
@@ -31,13 +31,15 @@ INPUT_TYPES = {
         'Encode': {
             'generator': 'RandomPoints',
             'vectors': 'points',
-            'lat': 'points[i][0]',
-            'lng': 'points[i][1]',
+            'num': 1024,
+            'lat': 'points[i%1024][0]',
+            'lng': 'points[i%1024][1]',
             },
         'DecodeString': {
             'generator': 'RandomStringGeohashes',
+            'num': 1024,
             'vectors': 'geohashes',
-            'geohash': 'geohashes[i]',
+            'geohash': 'geohashes[i%1024]',
             },
         }
 

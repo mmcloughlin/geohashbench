@@ -7,44 +7,44 @@ Benchmarks to compare golang geohash implementations.
 
 ```
 name                        time/op
-MmcloughlinEncodeString-4   60.9ns ± 0%
-PierrreEncodeString-4        485ns ± 0%
-CodeforEncodeString-4        500ns ± 0%
-GansiduiEncodeString-4       526ns ± 0%
-FanixkEncodeString-4         557ns ± 0%
-TomihiltunenEncodeString-4   564ns ± 0%
-TidwallEncodeString-4        636ns ± 0%
-BroadyEncodeString-4        1.07µs ± 0%
+MmcloughlinEncodeString-4   45.4ns ± 0%
+PierrreEncodeString-4        449ns ± 0%
+CodeforEncodeString-4        497ns ± 0%
+GansiduiEncodeString-4       525ns ± 0%
+FanixkEncodeString-4         553ns ± 0%
+TomihiltunenEncodeString-4   554ns ± 0%
+TidwallEncodeString-4        630ns ± 0%
+BroadyEncodeString-4        1.04µs ± 0%
 ```
 
 ### Integer Encoding
 
 ```
 name                    time/op
-MmcloughlinEncodeInt-4  11.1ns ± 0%
-BsmEncodeInt-4          14.1ns ± 0%
-EzzkoramEncodeInt-4     38.5ns ± 0%
-CorscEncodeInt52-4       380ns ± 0%
+MmcloughlinEncodeInt-4  3.75ns ± 0%
+BsmEncodeInt-4          15.2ns ± 0%
+EzzkoramEncodeInt-4     36.9ns ± 0%
+CorscEncodeInt52-4       382ns ± 0%
 ```
 
 ### String Decoding
 
 ```
 name                        time/op
-MmcloughlinDecodeString-4   152ns ± 0%
-PierrreDecodeString-4       337ns ± 0%
-BroadyDecodeString-4        445ns ± 0%
-TidwallDecodeString-4       472ns ± 0%
-CodeforDecodeString-4       484ns ± 0%
-TomihiltunenDecodeString-4  515ns ± 0%
-FanixkDecodeString-4        662ns ± 0%
+MmcloughlinDecodeString-4   155ns ± 0%
+PierrreDecodeString-4       330ns ± 0%
+CodeforDecodeString-4       369ns ± 0%
+BroadyDecodeString-4        422ns ± 0%
+TidwallDecodeString-4       464ns ± 0%
+TomihiltunenDecodeString-4  510ns ± 0%
+FanixkDecodeString-4        595ns ± 0%
 ```
 
 ### Meta
 
 ```
 $ date
-Sat May 19 16:24:38 PDT 2018
+Wed May 23 12:32:44 PDT 2018
 $ go version
 go version go1.9.2 darwin/amd64
 $ sysctl -n machdep.cpu.brand_string
