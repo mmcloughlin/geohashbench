@@ -1,8 +1,8 @@
 name                        time/op
-MmcloughlinDecodeString-4   155ns ± 0%
-PierrreDecodeString-4       330ns ± 0%
-CodeforDecodeString-4       369ns ± 0%
-BroadyDecodeString-4        422ns ± 0%
-TidwallDecodeString-4       464ns ± 0%
-TomihiltunenDecodeString-4  510ns ± 0%
-FanixkDecodeString-4        595ns ± 0%
+MmcloughlinDecodeString-4   106ns ± 0%
+PierrreDecodeString-4       297ns ± 0%
+CodeforDecodeString-4       367ns ± 0%
+BroadyDecodeString-4        429ns ± 0%
+TidwallDecodeString-4       446ns ± 0%
+TomihiltunenDecodeString-4  512ns ± 0%
+FanixkDecodeString-4        569ns ± 0%
